@@ -4,45 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course resources</title>
+    <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
     <style>
         body{
-            background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
-
-            background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-            
-            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-             
-            overflow-x:hidden;
-            text-align:center;
+          margin: 0;
+          /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+          background-color:  #12B886;
+          text-align: center;
+          overflow-x: hidden;
+          font-family: Nunito;
         }
-        .row{
+        #cardrow{
             padding: 5%;
         }
         .card{
             margin: 20px;
+            background-color: white;
         }
+
+        .card-title{
+            font-weight: 700;
+            /* color: #fff; */
+        }
+
+        .card-text{
+          font-weight: 600;
+          /* color: #fff; */
+
+        }
+
         #torrentbtn{
             margin: 10px;
         }
         #coursebtn{
             margin-left: 10px;
         }
+
+        nav{
+          font-weight: 700;
+        }
+
+        #blog{
+          color: whitesmoke;
+        }
+
+        a:hover{
+          text-decoration-line: none;
+        }
+
+        /* #coursebtn #torrentbtn{
+          background-color: #183153;
+          border: #183153;
+        } */
+
+       
+       
+
+
+        
     </style>
 
 </head>
 <body>
-    <div class="row">
+  <nav class="navbar navbar-dark bg-dark justify-content-between">
+    <a class="navbar-brand" href="#">
+      <img src="assets/683188e4c62bfb8328835fddfd958490_-_Copy-removebg.png" width="40" height="40" alt="logo"> Code with Lokesh
+    </a>
+    <form class="form-inline">
+
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button id="sb" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+    <div class="row" id="cardrow">
         <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">2020 Complete Python Bootcamp: From Zero to Hero in Python</h5>
                 <p class="card-text">Learn Python like a Professional! Start from the basics and go all the way to creating your own applications and games!</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/complete-python-bootcamp/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/complete-python-bootcamp/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - Complete Python Bootcamp Go from zero to hero in Python 3.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -53,7 +99,7 @@
               <div class="card-body">
                 <h5 class="card-title">Beginning C++ Programming - From Beginner to Beyond</h5>
                 <p class="card-text">Obtain Modern C++ Object-Oriented Programming (OOP) and STL skills needed for game, system, and application development.</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/beginning-c-plus-plus-programming/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/beginning-c-plus-plus-programming/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - Beginning C++ Programming - From Beginner to Beyond.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -64,7 +110,7 @@
               <div class="card-body">
                 <h5 class="card-title">Java Programming Masterclass for Software Developers</h5>
                 <p class="card-text">Learn Java In This Course And Become a Computer Programmer. Obtain valuable Core Java Skills And Java Certification</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/java-the-complete-java-developer-course/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/java-the-complete-java-developer-course/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - Java Programming Masterclass for Software Developers.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -75,7 +121,7 @@
               <div class="card-body">
                 <h5 class="card-title">Mastering Data Structures & Algorithms using C and C++</h5>
                 <p class="card-text">Learn, Analyse and Implement Data Structure using C and C++. Learn Recursion and Sorting.</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/datastructurescncpp/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/datastructurescncpp/" class="btn btn-info" target="_blank" > <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - Mastering Data Structures & Algorithms using C and C++.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -86,7 +132,7 @@
               <div class="card-body">
                 <h5 class="card-title">Machine Learning A-Z™: Hands-On Python & R In Data Science</h5>
                 <p class="card-text">Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included.</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/machinelearning/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/machinelearning/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - Machine Learning A-Z™ Hands-On Python & R In Data Science.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -97,7 +143,7 @@
               <div class="card-body">
                 <h5 class="card-title">Python for Data Science and Machine Learning Bootcamp</h5>
                 <p class="card-text">Learn how to use NumPy, Pandas, Seaborn , Matplotlib , Plotly , Scikit-Learn , Machine Learning, Tensorflow , and more!</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - Python for Data Science and Machine Learning Bootcamp.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -108,7 +154,7 @@
               <div class="card-body">
                 <h5 class="card-title">The Complete 2020 Web Development Bootcamp</h5>
                 <p class="card-text">Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - The Complete 2020 Web Development Bootcamp.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -119,7 +165,7 @@
                 <div class="card-body">
                   <h5 class="card-title">The Complete 2020 Flutter Development Bootcamp with Dart</h5>
                   <p class="card-text">Officially created in collaboration with the Google Flutter team.</p>
-                  <a id="coursebtn" href="https://www.udemy.com/course/flutter-bootcamp-with-dart/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                  <a id="coursebtn" href="https://www.udemy.com/course/flutter-bootcamp-with-dart/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                   <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - The Complete 2020 Flutter Development Bootcamp with Dart.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
                 </div>
               </div>
@@ -130,7 +176,7 @@
               <div class="card-body">
                 <h5 class="card-title">[NEW] Ultimate AWS Certified Cloud Practitioner - 2020</h5>
                 <p class="card-text">Pass the AWS Certified Cloud Practitioner Certification CLF-C01. Amazon Web Services Certified Cloud Practitioner exam!</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - The Complete 2020 Web Development Bootcamp.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -141,7 +187,7 @@
               <div class="card-body">
                 <h5 class="card-title">Ultimate AWS Certified Solutions Architect Associate 2020</h5>
                 <p class="card-text">Pass the AWS Certified Solutions Architect Associate Certification SAA-C02. Complete Amazon Web Services training!</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/[UdemyDownload.Com].Udemy..Ultimate.AWS.Certified.Solutions.Architect.Associate.2020.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -152,7 +198,7 @@
               <div class="card-body">
                 <h5 class="card-title">React - The Complete Guide (incl Hooks, React Router, Redux)</h5>
                 <p class="card-text">Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - React - The Complete Guide (incl Hooks, React Router, Redux).torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -163,7 +209,7 @@
               <div class="card-body">
                 <h5 class="card-title">React Native - The Practical Guide [2020 Edition]</h5>
                 <p class="card-text">Use React Native and your React knowledge to build native iOS and Android Apps - incl. Push Notifications, Hooks, Redux</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/react-native-the-practical-guide/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/react-native-the-practical-guide/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - React Native - The Practical Guide.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -174,7 +220,7 @@
               <div class="card-body">
                 <h5 class="card-title">The Ultimate React Native Series: Part 1</h5>
                 <p class="card-text">Master the Fundamentals of Building Native Apps with React Native and Expo</p>
-                <a id="coursebtn" href="https://codewithmosh.com/p/the-ultimate-react-native-course-part1" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://codewithmosh.com/p/the-ultimate-react-native-course-part1" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCoursesOnline.Me-Code-With-Mosh-The-Ultimate-React-Native-Series-Part-1.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -185,7 +231,7 @@
               <div class="card-body">
                 <h5 class="card-title">The Ultimate React Native Series: Part 2</h5>
                 <p class="card-text">Master advanced techniques and best practices for building professional-quality apps</p>
-                <a id="coursebtn" href="https://codewithmosh.com/p/the-ultimate-react-native-course-part2" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://codewithmosh.com/p/the-ultimate-react-native-course-part2" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCoursesOnline.Me-Code-With-Mosh-The-Ultimate-React-Native-Series-Part-2.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -197,7 +243,7 @@
               <div class="card-body">
                 <h5 class="card-title">Learn Ethical Hacking From Scratch</h5>
                 <p class="card-text">Become an ethical hacker that can hack computer systems like black hat hackers and secure them like security experts.</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/learn-ethical-hacking-from-scratch/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/learn-ethical-hacking-from-scratch/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - Learn Ethical Hacking From Scratch.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
@@ -208,19 +254,17 @@
               <div class="card-body">
                 <h5 class="card-title">JavaScript Algorithms and Data Structures Masterclass</h5>
                 <p class="card-text">The Missing Computer Science and Coding Interview Bootcamp</p>
-                <a id="coursebtn" href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/" class="btn btn-primary" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
+                <a id="coursebtn" href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/" class="btn btn-info" target="_blank"> <i class="fa fa-graduation-cap"></i> Course Link</a>
                 <a id="torrentbtn" href="torrents/FreeCourseSite.com-Udemy - JavaScript Algorithms and Data Structures Masterclass.torrent" class="btn btn-success" > <i class="fa fa-download"></i> Download Torrent</a>
               </div>
             </div>
           </div>
-        
-           
          
           
 
           
-<!-- 
-          <div class="col-sm-6">
+
+          <!-- <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title"></h5>
@@ -230,12 +274,38 @@
               </div>
             </div>
           </div> -->
+
+
           
         
       </div>
-       
-     <h5 style="color: whitesmoke;text-align: center;margin-bottom:35px">Made with 💙 by Lokesh</h2>
+      <div class="footer">
+            <div class="container">     
+                <div class="row" style="margin:0;padding: 0;" >                       
+                    <div class="col-lg-12 col-sm-6 col-xs-6">
+                        <div class="social_profile"  style="margin:30px 0 20px 0 ">
+                            <ul>
+                                <li style="display:inline-block;"><a href="https://github.com/lokeshsenthilkumar"  target="_blank"><i class="fa fa-github"></i></a></li>
+                                <li style="display:inline-block;"><a href="https://www.linkedin.com/in/lokesh-senthilkumar/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li style="display:inline-block;"><a href="mailto:lokeshsenthil49g2@gmail.comhttps://twitter.com/lokeshsenthilk" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li style="display:inline-block;"><a href="mailto:lokeshsenthil49g2@gmail.com" target="_blank"><i class="fa fa-envelope" ></i></a></li>
+                                <li style="display:inline-block;"><a href="https://www.facebook.com/lokeshsenthil6" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li style="display:inline-block;"><a href="https://www.instagram.com/lokesh.senthilkumar/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li style="display:inline-block;"><a href="https://wa.me/+916380780552"  target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                                
+                            </ul>
+                        </div>                          
+                    </div><!--- END COL -->         
+                </div><!--- END ROW --> 
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                      <p style="border-top: 1px solid rgba(255,255,255,0.4)"></p>
+                      <div style="text-align: center;color:#fff;">Made with <i class="fa fa-heart"></i> & <i class="fa fa-coffee"></i> by Lokesh</div>
+                      <p class="copyright">Copyrights © 2020 <a href="www.codewithlokesh.tech">CodeWithLokesh</a>.</p>
+                    </div><!--- END COL -->                 
+                </div><!--- END ROW -->                 
+            </div><!--- END CONTAINER -->
+        </div>
 
-      
 </body>
 </html>

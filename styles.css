@@ -1,0 +1,59 @@
+    /*START SOCIAL PROFILE CSS*/
+    .social_profile {margin-top:40px;text-align: center;}
+    .social_profile ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .social_profile ul li a {
+        text-align: center;
+        border: 0px;
+        text-transform: uppercase;
+        transition: all 0.3s ease 0s;
+        margin: 0px 5px;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 30px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+    @media only screen and (max-width:768px) { 
+    .social_profile ul li a{margin-right:10px;margin-bottom:10px;}
+    }
+    @media only screen and (max-width:480px) { 
+    .social_profile ul li a{
+        width:40px;
+        height:40px;
+        line-height:40px;
+    }
+    }
+    .social_profile ul li a:hover{
+    background:#12B886;
+    border: 1px solid #12B886;
+    color:#fff;
+    border:0px;
+    }
+    /*END SOCIAL PROFILE CSS*/
+    .copyright {
+        margin-top: 10px;
+        padding-top: 10px;
+        color:#fff;
+        font-size: 15px;
+        text-align: center;
+    }
+    .copyright a{color:whitesmoke;transition: all 0.2s ease 0s;}
+    .copyright a:hover{color:#12B886;}
+
+    
+
+    .footer{
+        /* background-image: linear-gradient(to top, #30cfd0 0%, #30d0d0f5 100%); */
+        background-color: #343A40;
+
+    }
+
+    
